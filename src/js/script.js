@@ -80,11 +80,11 @@ function exibirTodosOsVinhos() {
 }
 
 while(true) {
+    cadastrarVinho();
     if (confirm("Deseja cadastrar outro vinho?") == false) {
         let quantidade = vinhos.length;
         alert("Você cadastrou " + quantidade + " vinhos.\nVeja os detalhes no console.");
         exibirTodosOsVinhos();
         break;
     }
-    cadastrarVinho();
 }
